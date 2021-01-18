@@ -12,10 +12,4 @@ export class MeliLandingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  public goPrueba() {
-    debugger;
-    this.router.navigate(['/items']);
-  }
-
 }
