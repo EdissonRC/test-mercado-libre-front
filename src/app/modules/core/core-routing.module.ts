@@ -4,12 +4,18 @@ import { MeliDetailProductComponent } from './components/meli-detail-product/mel
 import { MeliLandingComponent } from './components/meli-landing/meli-landing.component';
 
 const routes: Routes = [
-    { path: "", component: MeliLandingComponent },
-    { path: "items", component: MeliDetailProductComponent }
+    { 
+      path: "", 
+      component: MeliLandingComponent
+    },
+    {
+      path: "items/:id",
+      component: MeliDetailProductComponent
+    },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  imports: [RouterModule.forChild(routes)],
 })
 export class CoreRoutingModule { }

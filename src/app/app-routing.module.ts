@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MeliDetailProductComponent } from './modules/core/components/meli-detail-product/meli-detail-product.component';
 
 const appRoutes: Routes = [
-  { path: "", redirectTo: "/", pathMatch: "full" },
-  { path: "**", redirectTo: "/" }
+  { path: "", loadChildren: "./modules/core/core.module#CoreModule" },
+  { path: "**", pathMatch: 'full', redirectTo: "/" }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes, {useHash: true})],
+  imports: [RouterModule.forRoot(appRoutes, {useHash: false})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

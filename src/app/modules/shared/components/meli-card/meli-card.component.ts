@@ -15,8 +15,7 @@ export class MeliCardComponent implements OnInit {
   }
 
   public goProductDetail(): void {
-    debugger;
-    this.route.navigate(['/items']);
+    this.route.navigate(['/items', 2]);
   }
 
 }
