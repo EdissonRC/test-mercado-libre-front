@@ -1,27 +1,41 @@
-# MercadoLibre
+# Mercado Libre
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
+Este proyecto es un test práctico para aspirantes al área de front-end de Mercado Libre.
 
-## Development server
+## Funcionalidad de la aplicación
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+En la vista de caja de búsqueda, debería poder ingresar el producto a buscar y al enviar el formulario navegar a la vista de Resultados de búsqueda, visualizando solo 4 productos. Luego, al hacer clic sobre uno de ellos, debería navegar a la vista de Detalle de Producto.
 
-## Code scaffolding
+## Servidor de desarrollo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecutar `ng serve` para desplegar el servidor de desarrollo. Navegar a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia alguno de los archivos de origen.
 
-## Build
+## Recursos construidos (endpoint)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+La aplicación consta de tres componentes principales: la caja de búsqueda, la visualización de resultados, y la descripción del detalle del producto.
 
-## Running unit tests
+### Requisitos:
+construir las siguientes tres vistas:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+○ Caja de búsqueda
+○ Resultados de la búsqueda
+○ Detalle del producto
 
-## Running end-to-end tests
+## Funcionamiento
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Las vistas son navegables de manera independiente y cuentan con su propia url:
+○ Caja de Búsqueda: “/”
+○ Resultados de la búsqueda: “/items?search=”
+○ Detalle del producto: “/items/:id”
 
-## Further help
+## Construir
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ejecutar `ng build` para construir el proyecto. Los artefactos de construcción se almacenarán en el directorio `dist/`. Utilizar el `--prod` bandera para una construcción de producción.
+
+## Ejecución de pruebas unitarias
+
+Ejecutar `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
+
+## Derechos reservados
+
+Autor: `Edison A Ruíz C`
