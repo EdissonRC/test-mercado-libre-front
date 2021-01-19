@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MeliCardComponent } from './meli-card.component';
+import { MeliCardItemsComponent } from './meli-card-items.component';
 
-describe('MeliCardComponent', () => {
-  let component: MeliCardComponent;
-  let fixture: ComponentFixture<MeliCardComponent>;
+describe('MeliCardItemsComponent', () => {
+  let component: MeliCardItemsComponent;
+  let fixture: ComponentFixture<MeliCardItemsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MeliCardComponent ]
+      declarations: [ MeliCardItemsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MeliCardComponent);
+    fixture = TestBed.createComponent(MeliCardItemsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

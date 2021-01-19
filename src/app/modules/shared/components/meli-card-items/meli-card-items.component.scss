@@ -27,7 +27,7 @@
                     max-width: 350px;
                     &.title {
                        font-size: 24px; 
-                       margin: 10px 10px 32px;
+                       margin: 10px 10px 32px 0;
                     }   
                     &.description {
                         font-size: 18px; 
@@ -57,4 +57,7 @@
             border: 0.5px #eee solid;
         }
     }
+}
+h5 {
+    color: var(--dark-gray);
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MeliDetailProductComponent } from './components/meli-detail-product/meli-detail-product.component';
+import { MeliItemsComponent } from './components/meli-items/meli-items.component';
 import { MeliLandingComponent } from './components/meli-landing/meli-landing.component';
 
 const routes: Routes = [
@@ -11,6 +12,10 @@ const routes: Routes = [
     {
       path: "items/:id",
       component: MeliDetailProductComponent
+    },
+    {
+      path: "items",
+      component: MeliItemsComponent
     },
 ];
 
