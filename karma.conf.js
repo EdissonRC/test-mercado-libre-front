@@ -24,6 +24,17 @@ module.exports = function (config) {
     jasmineHtmlReporter: {
       suppressAll: true // removes the duplicated traces
     },
+    covergeIstanbulReport: {
+      dir: require('path').join(__dirname, './coverage/mercado-libre'),
+      reports: ['html', 'lcovonly', 'test-summary'],
+      fixWebpackSourcePaths: true,
+      thresholds: {
+        statements: 90,
+        lines: 90,
+        branches: 90,
+        function: 90
+      } 
+    },
     coverageReporter: {
       dir: require('path').join(__dirname, './coverage/mercado-libre'),
       subdir: '.',

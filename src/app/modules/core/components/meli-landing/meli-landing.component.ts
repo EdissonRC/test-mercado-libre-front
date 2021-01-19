@@ -17,7 +17,7 @@ export class MeliLandingComponent implements OnInit {
 
   public itemsInfo!: IItemsResponse;
 
-  constructor(private router: Router, private sessionStorageService: SessionStorageService) { }
+  constructor(private sessionStorageService: SessionStorageService) { }
 
   ngOnInit(): void {
     this.sessionStorageService.setSessionStorage(SS_KEY_TOKEN, SS_VALUE_TOKEN);
