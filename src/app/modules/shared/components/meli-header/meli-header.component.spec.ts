@@ -1,14 +1,28 @@
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ToastrModule } from 'ngx-toastr';
 
 import { MeliHeaderComponent } from './meli-header.component';
 
 describe('HeaderComponent', () => {
   let component: MeliHeaderComponent;
   let fixture: ComponentFixture<MeliHeaderComponent>;
+  const mockRouter = { navigate: jasmine.createSpy('navigate')};
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MeliHeaderComponent ]
+      declarations: [ MeliHeaderComponent ],
+      imports: [
+        ToastrModule.forRoot(), 
+        HttpClientModule, 
+        HttpClientTestingModule,
+        ReactiveFormsModule,
+        FormsModule
+      ],
+      providers: [{provide: Router, useValue: mockRouter}],
     })
     .compileComponents();
   });

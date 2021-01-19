@@ -19,7 +19,7 @@ export class MeliHeaderComponent implements OnInit {
   public applicationForm!: FormGroup;
   
 
-  constructor(private formBuilder: FormBuilder, private router: Router, private sessionStorageService: SessionStorageService) {}
+  constructor(private formBuilder: FormBuilder, private router: Router) {}
 
   ngOnInit() {
     this.initForm();
