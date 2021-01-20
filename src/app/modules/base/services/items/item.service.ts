@@ -7,23 +7,22 @@ import { RequestService } from '../request.service';
 const SS_KEY_TOKEN = 'access-token';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class ItemService{
-
+export class ItemService {
   constructor(private requestService: RequestService, private sessionStorageService: SessionStorageService) {}
 
-  public getItems(data: string){
+  public getItems(data: string) {
     const headers = new HttpHeaders({
-      'access-token': this.sessionStorageService.getSessionStorage(SS_KEY_TOKEN, 'string')
-    })
+      'access-token': this.sessionStorageService.getSessionStorage(SS_KEY_TOKEN, 'string'),
+    });
     return this.requestService.get(`${ITEM.api}${ITEM.endpoint.items}${data}`, headers);
   }
 
-  public getItemsDetails(id: string){
+  public getItemsDetails(id: string) {
     const headers = new HttpHeaders({
-      'access-token': this.sessionStorageService.getSessionStorage(SS_KEY_TOKEN, 'string')
-    })
+      'access-token': this.sessionStorageService.getSessionStorage(SS_KEY_TOKEN, 'string'),
+    });
     return this.requestService.get(`${ITEM.api}${ITEM.endpoint.item}/${id}`, headers);
   }
 }
