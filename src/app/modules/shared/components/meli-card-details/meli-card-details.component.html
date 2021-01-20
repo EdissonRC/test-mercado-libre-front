@@ -3,9 +3,11 @@
         <div class="seven-column">
             <img [src]="itemInfo.item.picture">
             <div class="info-product">
-                <p class="type">{{itemInfo.item.condition === 'new'? 'Nuevo': 'Usado'}} - {{itemInfo.item.sold_quantity}}  vendidos</p>
+                <p class="type">{{itemInfo.item.condition === 'new'? 'Nuevo': 'Usado'}} -
+                    {{itemInfo.item.sold_quantity}} vendidos</p>
                 <h2>{{itemInfo.item.title}}</h2>
-                <p class="amount">{{itemInfo.item.price.amount | currency : itemInfo.item.price.currency:'symbol-narrow'}}</p>
+                <p class="amount">
+                    {{itemInfo.item.price.amount | currency : itemInfo.item.price.currency:'symbol-narrow'}}</p>
                 <div class="button-buy">
                     <button>Comprar</button>
                 </div>

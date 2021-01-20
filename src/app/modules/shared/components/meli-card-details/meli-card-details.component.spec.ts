@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MeliCardDetailsComponent } from './meli-card-details.component';
 
 describe('MeliCardDetailsComponent', () => {
@@ -8,9 +7,8 @@ describe('MeliCardDetailsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MeliCardDetailsComponent ]
-    })
-    .compileComponents();
+      declarations: [MeliCardDetailsComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

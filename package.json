@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test --watch false",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lint:html": "htmlhint src/**/*.html",
+    "lint:sass": "stylelint 'src/**/*.{css,scss}'",
+    "prettier:write": "prettier --write \"./{e2e,src}/**/*.ts\"",
+    "prettier:write:sass": "prettier-stylelint --write 'src/**/*.{css,scss}'"
   },
   "private": true,
   "dependencies": {

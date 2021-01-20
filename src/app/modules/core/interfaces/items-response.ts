@@ -1,8 +1,8 @@
-import { IAuthor } from "./author";
-import { IItems } from "./items";
+import { IAuthor } from './author';
+import { IItems } from './items';
 
 export interface IItemsResponse {
-    author: IAuthor,
-    categories: string [],
-    items: IItems[]
+  author: IAuthor;
+  categories: string[];
+  items: IItems[];
 }
